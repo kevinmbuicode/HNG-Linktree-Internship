@@ -32,6 +32,9 @@ const LinksSection = () => {
       }}
     >
       <CustomButton variant="contained" color="success">
+        <a href="https://twitter.com/kevinmbuimushan">Twitter</a>
+      </CustomButton>
+      <CustomButton variant="contained" color="success">
         <a href="https://training.zuri.team/">Zuri Team</a>
       </CustomButton>
       <CustomButton id="books" variant="contained" color="success">
