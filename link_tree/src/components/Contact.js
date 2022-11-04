@@ -18,11 +18,11 @@ const Contact = () => {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h3">Contact me</Typography>
+      <Typography variant="h4" fontSize="bold">Contact me</Typography>
       <Typography>
         Hi there, contact me to ask anything you have in mind.
       </Typography>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box sx={{ display: "flex", flexDirection: "column"}}>
         <label htmlFor="First name" id="first_name">
           First name
         </label>
