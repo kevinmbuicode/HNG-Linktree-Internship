@@ -1,5 +1,5 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import { MoreHoriz, Share } from "@mui/icons-material";
+// import { MoreHoriz, Share } from "@mui/icons-material";
 import React from "react";
 
 const ProfileSection = () => {
