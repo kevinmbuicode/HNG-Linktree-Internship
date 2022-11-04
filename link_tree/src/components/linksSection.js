@@ -13,6 +13,7 @@ const LinksSection = () => {
         backgroundColor: "#EAECF0",
         textDecoration: "none",
         fontWeight: 700,
+        height: 70,
         color: "black",
         "&:hover": {
           backgroundColor: "#98A2B3",
