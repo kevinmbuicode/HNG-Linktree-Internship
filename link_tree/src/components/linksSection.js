@@ -1,26 +1,25 @@
 import { Box, Button, styled } from "@mui/material";
 import React from "react";
-// import { Link } from "react-router-dom";
-import './styles.css'
+import { Link } from "react-router-dom";
+import "./styles.css";
 
 const LinksSection = () => {
-
-    const CustomButton = styled(Button)({
-        borderRadius: 5,
-        padding: 10,
-        paddingLeft: 20,
-        paddingRight: 20,
-        cursor: "pointer",
-        backgroundColor: "#EAECF0",
-        textDecoration: "none",
-        fontWeight: 700,
-        height: 70,
-        color: "black",
-        "&:hover": {
-          backgroundColor: "#98A2B3",
-          color: "white",
-        },
-    });
+  const CustomButton = styled(Button)({
+    borderRadius: 5,
+    padding: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
+    cursor: "pointer",
+    backgroundColor: "#EAECF0",
+    textDecoration: "none",
+    fontWeight: 700,
+    height: 50,
+    color: "black",
+    "&:hover": {
+      backgroundColor: "#98A2B3",
+      color: "white",
+    },
+  });
 
   return (
     <Box
@@ -30,7 +29,7 @@ const LinksSection = () => {
         gap: 3,
         maxWidth: "100%",
         margin: 3,
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       }}
     >
       <CustomButton variant="contained" color="success">
@@ -52,10 +51,12 @@ const LinksSection = () => {
       </CustomButton>
       <CustomButton id="book__design" variant="contained" color="success">
         <a href="https://books.zuri.team/design-rules">Design Books</a>
-      </CustomButton> 
-      <CustomButton id="contact" variant="contained" color="success">
-        <a href="/contact">Contact</a>
-      </CustomButton> 
+      </CustomButton>
+      <Link to="/contact">
+        <CustomButton id="contact" variant="contained" sx={{ width: "100%"}}>
+          Contact
+        </CustomButton>
+      </Link>
     </Box>
   );
 };
