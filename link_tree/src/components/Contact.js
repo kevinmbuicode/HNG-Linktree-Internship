@@ -42,7 +42,7 @@ const Contact = () => {
         <label htmlFor="email" id="first_name">
           Email
         </label>
-        <TextField id="email" placeholder="Enter your email address" />
+        <TextField id="email" placeholder="youremail@email.com" />
         <Box sx={{ marginTop: 2, display: "flex", flexDirection: "column" }}>
         <label htmlFor="email" id="first_name">
           Message
