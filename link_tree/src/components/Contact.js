@@ -25,33 +25,35 @@ const Contact = () => {
         Hi there, contact me to ask anything you have in mind.
       </Typography>
       <Box sx={{ display: "flex", flexDirection: {xs: "column", sm: "row"}, gap: 1}}>
-        <Box sx={{ display: "flex", flexDirection: "column"}}>
+        <Box sx={{ display: "flex", flexDirection: "column", marginTop: 2}}>
         <label htmlFor="First name" id="first_name">
           First name
         </label>
         <TextField id="first_name" placeholder="Enter your first name" />
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column"}}>
+        <Box sx={{ display: "flex", flexDirection: "column", marginTop: 2}}>
         <label htmlFor="Last name" id="first_name">
           Last name
         </label>
         <TextField id="last_name" placeholder="Enter your last name" />
         </Box>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", marginTop: 2 }}>
         <label htmlFor="email" id="first_name">
           Email
         </label>
         <TextField id="email" placeholder="Enter your email address" />
+        <Box sx={{ marginTop: 2, display: "flex", flexDirection: "column" }}>
         <label htmlFor="email" id="first_name">
           Message
         </label>
         <TextareaAutosize
           aria-label="minimum height"
           minRows={7}
-          placeholder="Send me a message and I'll reply as soon as possible..."
+          placeholder="Send me a message and I'll reply as soon as possible.."
           style={{ margin: 5 }}
-        />
+          />
+          </Box>
         <Box sx={{ display: "flex" }}>
           <Checkbox defaultChecked />
           <p>You agree to providing your data to Kevin who may contact you</p>
